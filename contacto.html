@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Productos - Barbería Alura</title>
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        <header class="cabecera">
+            <div class="container">
+                <h1><img src="imagenes/logo.png" alt="logo de barberia"></h1>
+                <nav>
+                    <ul class="navegacion">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <form action="">
+                <label class="label-contacto dp-block" for="nombre">Nombres y Apellidos:</label>
+                <input class="input-contacto dp-block" type="text" id="nombre" required>
+                <label class="label-contacto dp-block" for="correo">Correo Electronico:</label>
+                <input class="input-contacto dp-block" type="email" id="correo" required  placeholder="example@gmail.com">
+                <label class="label-contacto dp-block" for="telefono">Telefono:</label>
+                <input class="input-contacto dp-block" type="tel" id="telefono" required  placeholder="xxx-xxx-xxx">
+                <label class="dp-block" for="text-area">Mensaje:</label>
+                <textarea name="text-area" id="text-area" cols="57" rows="10" required></textarea>
+                <fieldset>
+                    <legend class="fs-3">¿Como desea que lo contactemos?</legend>
+                    <label class="dp-block mg-tb10" for="radio-email"><input type="radio" value="email" id="radio-email" name="contacto">Email</label>
+                    
+                    <label class="dp-block mg-tb10" for="radio-telefono"><input type="radio" value="telefono" id="radio-telefono" name="contacto">Telefono</label>
+                    
+                    <label class="dp-block mg-tb10" for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contacto" checked>WhatsApp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend class="fs-3">¿En que horario desea ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </fieldset>
+                <label class="mg-tb10"><input class="mg-tb10" type="checkbox" checked>¿Le gustaria recibir novedades sobre nuestra Barberia?</label>
+
+                <input class="boton-enviar input-contacto dp-block" type="submit" value="enviar">
+            </form>
+            <div>
+                <p>Horario de Atención:</p>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>08:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>08:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08:00 - 20:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="logo de barberia">
+            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+        </footer>
+    </body>
+</html>
